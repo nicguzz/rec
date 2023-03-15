@@ -1,4 +1,10 @@
 /node_modules
 
-/api
+/src/api/
+
+.env
+
+*.log
+
+/build
 
