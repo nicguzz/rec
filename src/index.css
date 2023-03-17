@@ -6,9 +6,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,700;7..72,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;700&display=swap");
+
 body {
   margin: 0;
-  font-family: "Literata", sans-serif;
+  font-family: "Golos Text", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 600;
@@ -20,7 +24,27 @@ header {
   margin-left: 10px;
 }
 
-h1,
 h2 {
   font-weight: 900;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: larger;
+}
+
+.bg-green {
+  background-color: green;
+  @apply flex rounded-2xl items-center h-20 w-20 justify-center;
+}
+
+.bg-red {
+  background-color: red;
+  @apply flex rounded-2xl items-center h-20 w-20 justify-center;
+}
+
+.bg-gold {
+  background-color: rgb(218, 186, 6);
+  @apply flex rounded-2xl items-center h-20 w-20
+    justify-center;
 }
