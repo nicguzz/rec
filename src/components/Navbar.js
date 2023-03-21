@@ -93,7 +93,7 @@ const Navbar = (props) => {
               {props.moviesNav.map((result) => (
                 <li
                   key={result.id}
-                  className="bg-zinc-400 text-black h-10 hover:text-white cursor-pointer border"
+                  className="bg-gray-400 text-black h-10 hover:text-white hover:bg-gray-500 cursor-pointer"
                   onClick={() => navListClick(result)}
                 >
                   {result.original_title}
