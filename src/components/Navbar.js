@@ -58,11 +58,16 @@ const Navbar = (props) => {
                 handleInputChange={handleInputChange}
                 queryRef={queryRef}
               />
-              <button type="submit" className="button" onClick={clearSearch}>
-                X
-              </button>
-              <div className="w-full">
-                {queryRef.current.length > 0 && (
+
+              {queryRef.current.length > 0 && (
+                <div className="w-full">
+                  <button
+                    type="submit"
+                    className="button"
+                    onClick={clearSearch}
+                  >
+                    X
+                  </button>
                   <ul className="w-full pt-2 rounded-2xl bg-gray-700 absolute z-50 text-white ">
                     {props.moviesNav.map((result) => (
                       <li
@@ -74,8 +79,8 @@ const Navbar = (props) => {
                       </li>
                     ))}
                   </ul>
-                )}
-              </div>
+                </div>
+              )}
             </div>
           </form>
         </div>
