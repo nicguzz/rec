@@ -15,7 +15,6 @@ function App() {
   const [trailer, setTrailer] = useState(null);
   const [movie, setMovie] = useState({ title: "Loading Movies" });
   const [playing, setPlaying] = useState(false);
-  const [itemFound, setitemFound] = useState(false);
 
   // This function makes an API call to retrieve a list of movies based on a search term or the most popular movies if no search term is provided. It sets the state variable movies to the results of the API call.
 
@@ -102,7 +101,6 @@ function App() {
             searchKey={searchKey}
             setMovies={setMovies}
             movies={movies}
-            itemFound={itemFound}
             selectMovie={selectMovie}
             searchMovies={searchMovies}
             onTypingResults={onTypingResults}
@@ -115,11 +113,7 @@ function App() {
             movie={movie}
             playing={playing}
           />
-          <MoviesList
-            selectMovie={selectMovie}
-            movies={movies}
-            itemFound={itemFound}
-          />
+          <MoviesList selectMovie={selectMovie} movies={movies} />
         </main>
       </div>
     </div>

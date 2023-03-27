@@ -12,7 +12,7 @@ function Hero(props) {
   };
 
   return (
-    <div className="subpixel-antialiased">
+    <div className="subpixel-antialiased z-0">
       {props.movie ? (
         <div
           className="viewtrailer"
